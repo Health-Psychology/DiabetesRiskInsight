@@ -27,13 +27,13 @@
     </tr>
     <tr>
         <td></td>
-        <td class="ruta">< 2.5%</td>
-        <td class="ruta">2.5% - <5%</td>
-        <td class="ruta">5% - <7.5%</td>
-        <td class="ruta">7.5% - <10%</td>
+        <td class="ruta">< 2%</td>
+        <td class="ruta">2% - <3%</td>
+        <td class="ruta">3% - <4%</td>
+        <td class="ruta">4% - <5%</td>
+        <td class="ruta">5% - <10%</td>
         <td class="ruta">10% - <15%</td>
-        <td class="ruta">15% - <25%</td>
-        <td class="ruta">>= 25%</td>
+        <td class="ruta">>= 15%</td>
     </tr>
     <tr>
         <td></td>
@@ -147,22 +147,22 @@
   let ps = getParameterByName("ps");
   let psn = Number(ps);
   let patientbucket = 0;
-  if (psn < 2.5) {
+  if (psn < 2) {
     patientbucket = 1;
   }
-  else if (psn < 5) {
+  else if (psn < 3) {
     patientbucket = 2;
   }
-  else if (psn < 7.5) {
+  else if (psn < 4) {
     patientbucket = 3;
   }
-  else if (psn < 10) {
+  else if (psn < 5) {
     patientbucket = 4;
   }
-  else if (psn < 15) {
+  else if (psn < 10) {
     patientbucket = 5;
   }
-  else if (psn < 25) {
+  else if (psn < 15) {
     patientbucket = 6;
   }
   else {
